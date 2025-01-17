@@ -35,7 +35,7 @@ Geospatial data is becoming increasingly important in solving real-world problem
 
 ### **Tutorials and Articles**
 - **GeoPandas Documentation**: [geopandas.org](https://geopandas.org/)  
-- **Satellite Image Analysis with Python**: [Planet Univesity]([https://towardsdatascience.com](https://university.planet.com/getting-started-with-analyzing-satellite-imagery-with-python/1788192/scorm/37f7ncy9a67o9))  
+- **Satellite Image Analysis with Python**: [Planet Univesity](https://university.planet.com/getting-started-with-analyzing-satellite-imagery-with-python/1788192/scorm/37f7ncy9a67o9)
 
 ---
 
@@ -64,7 +64,7 @@ Geospatial data is becoming increasingly important in solving real-world problem
 
 ### **Free Courses**
 1. **Introduction to GIS**  
-   - [Esri’s GIS Basics]([https://learn.arcgis.com/en/paths/gis-basics/](https://www.esri.com/training/catalog/5d9cd7de5edc347a71611ccc/gis-basics/))  
+   - [Esri’s GIS Basics](https://www.esri.com/training/catalog/5d9cd7de5edc347a71611ccc/gis-basics/) 
    - [QGIS Tutorials](https://docs.qgis.org/latest/en/docs/index.html)
 
 2. **Satellite Image Processing** 
