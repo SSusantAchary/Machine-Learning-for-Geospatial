@@ -116,7 +116,7 @@ For questions, suggestions, or collaborations, feel free to open an issue or con
 
 ```bibtex
 @misc{Curious Soul,
-    author       = {Susant Achary},
+    author       = {S Susant Achary},
     title        = {Machine-Learning-for-Geospatial},
     year         = {2025}
 }
