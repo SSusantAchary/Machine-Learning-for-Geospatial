@@ -89,27 +89,51 @@ Geospatial data is becoming increasingly important in solving real-world problem
 
 ---
 # Machine Learning for Remote Sensing (ML4RS) Workshop @ ICLR 2024 [Microsoft Sponsor](https://www.microsoft.com/en-us/research/project/geospatial-machine-learning/)
+This is a curated list of papers presented at the **Machine Learning for Remote Sensing (ML4RS)** Workshop at **ICLR 2023 & 2024**.
 
-This is a curated list of papers presented at the **Machine Learning for Remote Sensing (ML4RS)** Workshop at **ICLR 2024**.
 
-| **Title**                                                                                         | **Presentation Type** | **Award**          |
-|---------------------------------------------------------------------------------------------------|-----------------------|--------------------|
-| **Good at Captioning, Bad at Counting: Benchmarking GPT-4V on Earth Observation Data**            | Oral                  | Best Paper         |
-| **A Concise Tiling Strategy for Preserving Spatial Context in Earth Observation Imagery**         | Poster                | Best Poster        |
-| **Causal Graph Neural Networks for Wildfire Danger Prediction**                                   | Oral                  |                    |
-| **Sparsely Labeled Land Cover Classification with Oversegmentation-based Graph U-Nets**           | Oral                  |                    |
-| **Uncertainty Aware Tropical Cyclone Wind Speed Estimation from Satellite Data**                  | Oral                  |                    |
-| **CromSS: Cross-modal Pre-training with Noisy Labels for Remote Sensing Image Segmentation**      | Oral                  |                    |
-| **Leveraging Synthetic Data and Machine Learning for Cloud Optical Thickness Estimation**         | Oral                  |                    |
-| **Global Aboveground Biomass Density Estimation from Sentinel-2 Imagery**                         | Poster                |                    |
-| **AI-Powered School Mapping and Connectivity Status Prediction Using Satellite Imagery**          | Poster                |                    |
-| **Evaluating Tool-Augmented Agents in Remote Sensing Platforms**                                  | Poster                |                    |
-| **A Change Detection Reality Check**                                                              | Poster                |                    |
-| **Uncertainty Quantification for Probabilistic Machine Learning in Earth Observation**            | Poster                |                    |
-| **Red Teaming Models for Hyperspectral Image Analysis Using Explainable AI**                      | Poster                |                    |
+| **Title**                                                                                               | **Presentation Type** | **Award**          |
+|---------------------------------------------------------------------------------------------------------|-----------------------|--------------------|
+| [**Good at Captioning, Bad at Counting: Benchmarking GPT-4V on Earth Observation Data**](https://ml-for-rs.github.io/iclr2024/camera_ready/papers/16.pdf) | Oral                  | Best Paper         |
+| [**A Concise Tiling Strategy for Preserving Spatial Context in Earth Observation Imagery**](https://ml-for-rs.github.io/iclr2024/camera_ready/papers/28.pdf) | Poster                | Best Poster        |
+| [**Causal Graph Neural Networks for Wildfire Danger Prediction**](https://ml-for-rs.github.io/iclr2024/camera_ready/papers/16.pdf) | Oral                  |                    |
+| [**Sparsely Labeled Land Cover Classification with Oversegmentation-based Graph U-Nets**](https://ml-for-rs.github.io/iclr2024/camera_ready/papers/16.pdf) | Oral                  |                    |
+| [**Uncertainty Aware Tropical Cyclone Wind Speed Estimation from Satellite Data**](https://ml-for-rs.github.io/iclr2024/camera_ready/papers/16.pdf) | Oral                  |                    |
+| [**CromSS: Cross-Modal Pre-Training with Noisy Labels for Remote Sensing Image Segmentation**](https://ml-for-rs.github.io/iclr2024/camera_ready/papers/23.pdf) | Oral                  |                    |
+| [**Leveraging Synthetic Data and Machine Learning for Cloud Optical Thickness Estimation**](https://ml-for-rs.github.io/iclr2024/camera_ready/papers/16.pdf) | Oral                  |                    |
+| [**Global Aboveground Biomass Density Estimation from Sentinel-2 Imagery**](https://ml-for-rs.github.io/iclr2024/camera_ready/papers/45.pdf) | Poster                |                    |
+| [**AI-Powered School Mapping and Connectivity Status Prediction Using Satellite Imagery**](https://ml-for-rs.github.io/iclr2024/camera_ready/papers/24.pdf) | Poster                |                    |
+| [**Evaluating Tool-Augmented Agents in Remote Sensing Platforms**](https://ml-for-rs.github.io/iclr2024/camera_ready/papers/65.pdf) | Poster                |                    |
+| [**A Change Detection Reality Check**](https://ml-for-rs.github.io/iclr2024/camera_ready/papers/46.pdf) | Poster                |                    |
+| [**Uncertainty Quantification for Probabilistic Machine Learning in Earth Observation**](https://ml-for-rs.github.io/iclr2024/camera_ready/papers/6.pdf) | Poster                |                    |
+| [**Red Teaming Models for Hyperspectral Image Analysis Using Explainable AI**](https://ml-for-rs.github.io/iclr2024/camera_ready/papers/32.pdf) | Poster                |                    |
+
+---
+
+# Machine Learning for Remote Sensing (ML4RS) Workshop @ ICLR 2023
+
+| **Title**                                                                                               | **Presentation Type** |
+|---------------------------------------------------------------------------------------------------------|-----------------------|
+| [**Towards Explainable Land Cover Mapping: A Counterfactual-Based Strategy**](https://arxiv.org/pdf/2301.01520.pdf) | Oral                  |
+| [**Enhancing Acoustic Classification Using Meta-Data**](https://ml-for-rs.github.io/iclr2023/camera_ready/papers/9.pdf) | Oral                  |
+| [**Explaining Multimodal Data Fusion: Occlusion Analysis for Wilderness Mapping**](https://ml-for-rs.github.io/iclr2023/camera_ready/papers/10.pdf) | Oral                  |
+| [**Mask Conditional Synthetic Satellite Imagery**](https://ml-for-rs.github.io/iclr2023/camera_ready/papers/11.pdf) | Oral                  |
+| [**Optimizing Ecosystem Monitoring through Machine Learning**](https://ml-for-rs.github.io/iclr2023/camera_ready/papers/12.pdf) | Oral                  |
+| [**Aerial View Localization with Reinforcement Learning: Towards Emulating Search-and-Rescue**](https://ml-for-rs.github.io/iclr2023/camera_ready/papers/13.pdf) | Poster                |
+| [**Improved Marine Debris Detection in Satellite Imagery with an Automatic Refinement of Coarse Hand Annotations**](https://ml-for-rs.github.io/iclr2023/camera_ready/papers/14.pdf) | Poster                |
+| [**Titan Cloud Identification with Deep Transfer Learning**](https://ml-for-rs.github.io/iclr2023/camera_ready/papers/15.pdf) | Poster                |
+| [**Evaluation Challenges for Geospatial ML**](https://ml-for-rs.github.io/iclr2023/camera_ready/papers/16.pdf) | Poster                |
+| [**Building Light Models with Competitive Performance for Remote Sensing**](https://ml-for-rs.github.io/iclr2023/camera_ready/papers/17.pdf) | Poster                |
+| [**Unsupervised Domain Adaptation for Semantic Segmentation of Dwellings with Unbalanced Optimal Transport**](https://ml-for-rs.github.io/iclr2023/camera_ready/papers/18.pdf) | Poster                |
+| [**Efficient Ship Detection on Large Open Sea Areas**](https://ml-for-rs.github.io/iclr2023/camera_ready/papers/19.pdf) | Poster                |
+| [**Remote Control: Debiasing Remote Sensing Predictions for Causal Inference**](https://ml-for-rs.github.io/iclr2023/camera_ready/papers/20.pdf) | Poster                |
+| [**Improve State-Level Wheat Yield Forecasts in Kazakhstan on GEOGLAM’s EO Data by Leveraging a Simple Spatial-Aware Technique**](https://ml-for-rs.github.io/iclr2023/camera_ready/papers/21.pdf) | Poster                |
+
+---
 
 ## 📌 For more details
-- visit the [official workshop website](https://ml-for-rs.github.io/iclr2024/).
+- visit the [official workshop website](https://ml-for-rs.github.io/iclr2023/).
+- visit the [official workshop website 24](https://ml-for-rs.github.io/iclr2024/).
 ---
 ## **📁 Repository Contents**
 
