@@ -1,5 +1,9 @@
 # **Machine Learning for Geospatial 🌍**
 
+<p align="center">
+  <img src="https://d1a3f4spazzrp4.cloudfront.net/kepler.gl/website/showcase/geojson-s.png" alt="Last-Mile Delivery Visualization" width="600">
+</p>
+
 Welcome to the **Machine Learning for Geospatial** repository! This is a curated collection of resources, tools, programming libraries, and courses dedicated to applying machine learning techniques to geospatial data. Whether you're a beginner or an experienced practitioner, this repository aims to provide everything you need to explore the fascinating intersection of machine learning and geospatial science.
 
 ---
