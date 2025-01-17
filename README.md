@@ -86,7 +86,29 @@ Geospatial data is becoming increasingly important in solving real-world problem
    - [Omdena’s Geospatial AI Courses](https://omdena.com/)  
 
 ---
+# Machine Learning for Remote Sensing (ML4RS) Workshop @ ICLR 2024 [Microsoft Sponsor](https://www.microsoft.com/en-us/research/project/geospatial-machine-learning/)
 
+This is a curated list of papers presented at the **Machine Learning for Remote Sensing (ML4RS)** Workshop at **ICLR 2024**.
+
+| **Title**                                                                                         | **Presentation Type** | **Award**          |
+|---------------------------------------------------------------------------------------------------|-----------------------|--------------------|
+| **Good at Captioning, Bad at Counting: Benchmarking GPT-4V on Earth Observation Data**            | Oral                  | Best Paper         |
+| **A Concise Tiling Strategy for Preserving Spatial Context in Earth Observation Imagery**         | Poster                | Best Poster        |
+| **Causal Graph Neural Networks for Wildfire Danger Prediction**                                   | Oral                  |                    |
+| **Sparsely Labeled Land Cover Classification with Oversegmentation-based Graph U-Nets**           | Oral                  |                    |
+| **Uncertainty Aware Tropical Cyclone Wind Speed Estimation from Satellite Data**                  | Oral                  |                    |
+| **CromSS: Cross-modal Pre-training with Noisy Labels for Remote Sensing Image Segmentation**      | Oral                  |                    |
+| **Leveraging Synthetic Data and Machine Learning for Cloud Optical Thickness Estimation**         | Oral                  |                    |
+| **Global Aboveground Biomass Density Estimation from Sentinel-2 Imagery**                         | Poster                |                    |
+| **AI-Powered School Mapping and Connectivity Status Prediction Using Satellite Imagery**          | Poster                |                    |
+| **Evaluating Tool-Augmented Agents in Remote Sensing Platforms**                                  | Poster                |                    |
+| **A Change Detection Reality Check**                                                              | Poster                |                    |
+| **Uncertainty Quantification for Probabilistic Machine Learning in Earth Observation**            | Poster                |                    |
+| **Red Teaming Models for Hyperspectral Image Analysis Using Explainable AI**                      | Poster                |                    |
+
+## 📌 For more details
+- visit the [official workshop website](https://ml-for-rs.github.io/iclr2024/).
+---
 ## **📁 Repository Contents**
 
 - **📂 Datasets**: Curated datasets for geospatial ML experiments.
