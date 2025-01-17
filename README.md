@@ -42,21 +42,23 @@ Geospatial data is becoming increasingly important in solving real-world problem
 ## **🛠️ Tools and Programming Libraries**
 
 ### **Geospatial Libraries**
-- **GeoPandas**: For handling and analyzing vector geospatial data ([GitHub](https://github.com/geopandas/geopandas)).
-- **Rasterio**: For reading and writing raster datasets ([GitHub](https://github.com/mapbox/rasterio)).
-- **Shapely**: For geometric operations like intersections and unions ([GitHub](https://github.com/shapely/shapely)).
-- **Fiona**: For reading and writing vector geospatial data ([GitHub](https://github.com/Toblerity/Fiona)).
-- **xarray**: For handling multidimensional geospatial datasets ([GitHub](https://github.com/pydata/xarray)).
+- **GeoPandas**: For handling and analyzing vector geospatial data ([Geopandas](https://github.com/geopandas/geopandas)).
+- **Rasterio**: For reading and writing raster datasets ([Rasterio](https://github.com/mapbox/rasterio)).
+- **Shapely**: For geometric operations like intersections and unions ([Shapely](https://github.com/shapely/shapely)).
+- **Fiona**: For reading and writing vector geospatial data ([fiona](https://github.com/Toblerity/Fiona)).
+- **xarray**: For handling multidimensional geospatial datasets ([xarray](https://github.com/pydata/xarray)).
 
 ### **Machine Learning Libraries**
-- **scikit-learn**: Classic ML library for classification, regression, and clustering ([GitHub](https://github.com/scikit-learn/scikit-learn)).
+- **TorchGeo**: Python deep learning lib for geospatial data ([TorchGeo](https://github.com/microsoft/torchgeo/))
+- **scikit-learn**: Classic ML library for classification, regression, and clustering ([Scikit-learn](https://github.com/scikit-learn/scikit-learn)).
 - **TensorFlow / PyTorch**: For deep learning tasks like image segmentation ([TensorFlow](https://www.tensorflow.org/), [PyTorch](https://pytorch.org/)).
 - **LightGBM / XGBoost**: Gradient boosting libraries for tabular geospatial datasets ([LightGBM](https://lightgbm.readthedocs.io/), [XGBoost](https://xgboost.readthedocs.io/)).
 
 ### **Visualization Tools**
-- **Folium**: Create interactive maps ([GitHub](https://github.com/python-visualization/folium)).
-- **Kepler.gl**: Web-based tool for large-scale geospatial visualizations ([GitHub](https://github.com/keplergl/kepler.gl)).
-- **Deck.gl**: High-performance 3D geospatial visualizations ([GitHub](https://github.com/visgl/deck.gl)).
+- **Leaflet**: 🍃 JavaScript library for mobile-friendly interactive maps ([Leaflet](https://github.com/Leaflet/Leaflet))
+- **Folium**: Create interactive maps ([Folium](https://github.com/python-visualization/folium)).
+- **Kepler.gl**: Web-based tool for large-scale geospatial visualizations ([Kepler.gl](https://github.com/keplergl/kepler.gl)).
+- **Deck.gl**: High-performance 3D geospatial visualizations ([Deck.gl](https://github.com/visgl/deck.gl)).
 
 ---
 
