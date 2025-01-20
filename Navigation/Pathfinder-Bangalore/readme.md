@@ -34,5 +34,5 @@ We utilize the following datasets:
 ## ⚙️ **Installation and Setup**
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/yourusername/Pathfinder-Bangalore.git
-   cd Pathfinder-Bangalore
+   git clone https://github.com/SSusantAchary/Machine-Learning-for-Geospatial.git
+   cd Machine-Learning-for-Geospatial/Navigation/Pathfinder-Bangalore
