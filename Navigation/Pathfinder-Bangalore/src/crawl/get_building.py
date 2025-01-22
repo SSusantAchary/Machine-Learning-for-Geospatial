@@ -7,7 +7,7 @@ from typing import Optional
 
 # Constants and Configurations
 DEFAULT_EPSG_CODE = "EPSG:4326"
-DEFAULT_OUTPUT_DIR = Path(r"D:\Work\experiments_here\Github_codes\Navigation\Pathfinder-Bangalore")
+DEFAULT_OUTPUT_DIR = Path(".\Navigation\Pathfinder-Bangalore")# your local path
 DEFAULT_PLACE_NAME = "Bangalore, India"
 
 # Configure logging
