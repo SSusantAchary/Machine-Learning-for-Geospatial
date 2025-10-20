@@ -67,7 +67,6 @@ Geospatial data is becoming increasingly important in solving real-world problem
 ##  🌍GeoSpatial Tech Stack
 <table> <tr> <!-- LEFT COLUMN --> <td style="vertical-align:top; width:50%; padding-right:12px;">
 
-
   <h3>Transform</h3>
   <table>
     <tr><th>Tool</th><th>What it’s for</th><th>Icon</th></tr>
@@ -124,19 +123,15 @@ Geospatial data is becoming increasingly important in solving real-world problem
     <tr><td>lonboard</td><td>WebGL vector map rendering</td><td>🧭⚡</td></tr>
   </table>
 
-  <h3>OLTP (Operational)</h3>
+  <h3>Formats</h3>
   <table>
-    <tr><th>Tool</th><th>What it’s for</th><th>Icon</th></tr>
-    <tr><td>PostGIS</td><td>Spatial SQL (geometry/geography)</td><td>🐘🗺️</td></tr>
-    <tr><td>Crunchy Data (Postgres)</td><td>Managed Postgres/PostGIS</td><td>🥨</td></tr>
+    <tr><th>Format</th><th>What it’s for</th><th>Icon</th></tr>
+    <tr><td>GeoParquet</td><td>Columnar vectors with geo metadata</td><td>📦🗺️</td></tr>
+    <tr><td>COG (Cloud-Optimized GeoTIFF)</td><td>HTTP-friendly rasters</td><td>☁️🖼️</td></tr>
+    <tr><td>STAC</td><td>Cataloging EO assets</td><td>🗂️</td></tr>
+    <tr><td>COPC.io (point clouds)</td><td>Streamable point clouds</td><td>☁️📍</td></tr>
+    <tr><td>Zarr</td><td>Chunked n-D arrays (cloud-native)</td><td>🧱📚</td></tr>
   </table>
-
-</td>
-
-<!-- RIGHT COLUMN -->
-<td style="vertical-align:top; width:50%; padding-left:12px;">
-
-
 
   <h3>Apps</h3>
   <table>
@@ -198,16 +193,6 @@ Geospatial data is becoming increasingly important in solving real-world problem
     <tr><td>Wasabi</td><td>S3-compatible storage</td><td>🌶️🪣</td></tr>
     <tr><td>Cloudflare R2 / Backblaze-style</td><td>Low-egress object storage</td><td>🌀🪣</td></tr>
     <tr><td>obstore</td><td>S3-compatible OSS</td><td>📦🪣</td></tr>
-  </table>
-
-  <h3>Formats</h3>
-  <table>
-    <tr><th>Format</th><th>What it’s for</th><th>Icon</th></tr>
-    <tr><td>GeoParquet</td><td>Columnar vectors with geo metadata</td><td>📦🗺️</td></tr>
-    <tr><td>COG (Cloud-Optimized GeoTIFF)</td><td>HTTP-friendly rasters</td><td>☁️🖼️</td></tr>
-    <tr><td>STAC</td><td>Cataloging EO assets</td><td>🗂️</td></tr>
-    <tr><td>COPC.io (point clouds)</td><td>Streamable point clouds</td><td>☁️📍</td></tr>
-    <tr><td>Zarr</td><td>Chunked n-D arrays (cloud-native)</td><td>🧱📚</td></tr>
   </table>
 
 </td>
