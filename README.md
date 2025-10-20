@@ -546,7 +546,11 @@ This is a curated list of papers presented at the **Machine Learning for Remote 
 
 - **📂 Datasets**: Curated datasets for geospatial ML experiments.
 - **📂 Tutorials**: Step-by-step guides and example notebooks.
-- **📂 Notebooks**: Jupyter notebooks demonstrating geospatial machine learning workflows.
+- **📂 Notebooks**: Jupyter notebooks demonstrating geospatial machine learning workflows (1 in-repo quickstart).
+- **📂 Notebooks/earthengine**: Vendored Google Earth Engine workflows (cloud masking, classification, change detection) sourced from the community — 42 notebooks across:
+  - `CloudMasking` (4) · `RasterProcessing` (8) · `ArrayAnalytics` (4) · `VectorAndZonal` (4) · `SpatialJoins` (1)
+  - `ImageCollections` (3) · `Segmentation` (1) · `Detection` (1) · `MachineLearning` (4)
+  - `Terrain` (3) · `WaterMonitoring` (4) · `ChangeMonitoring` (2) · `Visualization` (3)
 - **📂 Tools**: Scripts and utilities for geospatial data processing.
 
 ---
