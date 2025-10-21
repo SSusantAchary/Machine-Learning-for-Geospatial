@@ -542,7 +542,7 @@ This is a curated list of papers presented at the **Machine Learning for Remote 
 ---
 
 ---
-## **📁 Repository Contents**
+## **📁 Repository Contents [New additions are WIP]**
 
 - **📂 Datasets**: Curated datasets for geospatial ML experiments.
 - **📂 Tutorials**: Step-by-step guides and example notebooks.
