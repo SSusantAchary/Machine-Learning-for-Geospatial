@@ -63,6 +63,34 @@ Geospatial data is becoming increasingly important in solving real-world problem
 - **Folium**: Create interactive maps ([Folium](https://github.com/python-visualization/folium)).
 - **Kepler.gl**: Web-based tool for large-scale geospatial visualizations ([Kepler.gl](https://github.com/keplergl/kepler.gl)).
 - **Deck.gl**: High-performance 3D geospatial visualizations ([Deck.gl](https://github.com/visgl/deck.gl)).
+
+---
+
+## **🤖 Geospatial AI Model Hub**
+
+| Category | Model | Why it matters | References |
+|---|---|---|---|
+| Foundation & SSL | Prithvi-EO (IBM–NASA) | HLS-pretrained foundation models for broad EO transfer. | [Hugging Face](https://huggingface.co/ibm-nasa-geospatial/Prithvi-EO-2.0-300M-TL) · [IBM Research](https://research.ibm.com/blog/geospatial-foundation-models) · [NASA Earthdata](https://www.earthdata.nasa.gov/learn/articles/prithvi-eo) |
+| Foundation & SSL | SatMAE | Masked autoencoder tuned for temporal/multispectral imagery. | [arXiv](https://arxiv.org/abs/2207.00205) · [NeurIPS 2022](https://papers.nips.cc/paper_files/paper/2022/hash/4bb13af0fa8c70a8919ef4ee33a0b9d8-Abstract-Conference.html) |
+| Foundation & SSL | SeCo (Seasonal Contrast) | Seasonal Sentinel-2 contrastive pretraining; strong downstream lifts. | [CVPR 2021](https://openaccess.thecvf.com/content/CVPR2021/papers/Manas_Seasonal_Contrast_Learning_From_Unlabeled_Satellite_Imagery_CVPR_2021_paper.pdf) |
+| Foundation & SSL | Scale-MAE | Scale-aware MAE that improves SpaceNet-style building segmentation. | [arXiv](https://arxiv.org/abs/2304.10558) · [CVPR 2023](https://openaccess.thecvf.com/content/CVPR2023/html/Garg_Scale-MAE_A_Scale-Aware_Masked_Autoencoder_for_Scale-Consistent_Representation_Learning_CVPR_2023_paper.html) |
+| Foundation & SSL | SatlasPretrain (AI2) | Ready-to-use encoders for Sentinel/Landsat and aerial imagery. | [GitHub](https://github.com/allenai/satlas-pretrain) |
+| Foundation & SSL | TorchGeo pretrained suite | Catalog of EO-specific backbones (EuroSAT, So2Sat, etc.). | [Docs](https://torchgeo.readthedocs.io/en/stable/auto_examples/pretrained_models.html) |
+| Land-use / LULC | EuroSAT pretrained models | CNN/ViT baselines for Sentinel-2 land-use classification. | [GitHub](https://github.com/phelber/eurosat) |
+| Land-use / LULC | BigEarthNet encoders | Multilabel S1/S2 classifiers for regional land-cover tasks. | [BigEarthNet](https://bigearth.net/) |
+| Building footprints | TernausNet / TernausNetV2 | U-Net variants widely used on SpaceNet building segmentation. | [arXiv](https://arxiv.org/abs/1805.10549) |
+| Building footprints | Mask R-CNN / U-Net baselines | Strong SpaceNet MVOI baselines for instance & semantic footprints. | [Medium](https://medium.com/the-downlinq/spacenet-mvoi-baseline-models-90e8db4b67a) |
+| Road extraction | CRESI / CRESIv2 | End-to-end road network & speed extraction (SpaceNet-5 baseline). | [GitHub](https://github.com/avanetten/cresi) · [CVPRW 2020](https://openaccess.thecvf.com/content_CVPRW_2020/papers/w1/Van_Etten_CRESI_Combatting_Road_Extraction_with_Satellites_CVPRW_2020_paper.pdf) |
+| Road extraction | SpaceNet-5 baselines | Routing-quality metrics like APLS_time for road graph scoring. | [Medium](https://medium.com/the-downlinq/spacenet-5-road-detection-challenge-winners-9a5d0b4bde76) |
+| Change detection | ChangeFormer | Transformer Siamese change detection with open weights. | [arXiv](https://arxiv.org/abs/2201.01293) · [GitHub](https://github.com/justchenhao/ChangeFormer) |
+| Change detection | TUNetCD | Transformer-U-Net hybrid for remote-sensing change maps. | [PMC](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9557356/) |
+| Cloud masking | s2cloudless | Lightweight Sentinel-2 cloud probability & mask generator. | [GitHub](https://github.com/sentinel-hub/s2cloudless) |
+| Cloud masking | CloudSEN12 / CloudSEN12+ | Benchmark dataset & models for clouds/shadows. | [Nature Sci. Data](https://www.nature.com/articles/s41597-022-01307-5) · [Project](https://cloudsen12.github.io/) |
+| Cloud masking | CloudS2Mask | DL library for high-accuracy Sentinel-2 cloud/shadow detection. | [ScienceDirect](https://www.sciencedirect.com/science/article/pii/S0924271622003086) |
+| Flood mapping | Sen1Floods11 U-Nets | Benchmarks for SAR/optical flood segmentation. | [GitHub](https://github.com/cloudtostreet/Sen1Floods11) |
+| Object detection | xView baselines & YOLO | Large-scale overhead object detection benchmarks. | [xView](https://xviewdataset.org/) · [Ultralytics Docs](https://docs.ultralytics.com/datasets/vision/xview/) |
+| SAM for EO | SAMRS | NeurIPS’23 dataset/code for Segment Anything in remote sensing. | [GitHub](https://github.com/ViTAE-Transformer/SAMRS) · [arXiv](https://arxiv.org/abs/2306.07850) |
+
 ---
 ##  🌍GeoSpatial Tech Stack
 <table> <tr> <!-- LEFT COLUMN --> <td style="vertical-align:top; width:50%; padding-right:12px;">
