@@ -98,6 +98,17 @@ Geospatial data is becoming increasingly important in solving real-world problem
 | Renewable energy siting | Renewable Energy Mapping | Identifies solar infrastructure footprints across India. | [Publication](https://www.microsoft.com/en-us/research/publication/an-artificial-intelligence-dataset-for-solar-energy-locations-in-india/) · [Code](https://github.com/microsoft/solar-farms-mapping) · [Image](https://www.microsoft.com/en-us/research/wp-content/uploads/2023/09/GeoAI1.jpg) |
 
 ---
+
+## **🛰️ Domain Imagery Gallery**
+
+| Domain | Snapshot | Source |
+|---|---|---|
+| Agriculture | <img src="https://www.microsoft.com/en-us/research/wp-content/uploads/2022/01/Geospatial_BuildingDamage-predictions_01-2022_1400x788.jpg" alt="Aerial view of agricultural facilities" width="260"> | [Microsoft Research – Poultry barn mapping](https://www.microsoft.com/en-us/research/project/geospatial-machine-learning/) |
+| Weather Forecasting | <img src="assets/weather_forecast.png" alt="Synthetic synoptic forecast contours" width="260"> | Generated with Matplotlib (pressure anomaly contours) |
+| Rainfall | <img src="assets/rainfall_map.png" alt="Synthetic rainfall intensity heatmap" width="260"> | Generated with Matplotlib (monthly rainfall estimate) |
+| Land Inspection | <img src="assets/land_inspection.png" alt="Synthetic land condition survey grid" width="260"> | Generated with Matplotlib (land inspection grid) |
+
+---
 ##  🌍GeoSpatial Tech Stack
 <table> <tr> <!-- LEFT COLUMN --> <td style="vertical-align:top; width:50%; padding-right:12px;">
 
