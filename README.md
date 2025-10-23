@@ -40,6 +40,50 @@ Geospatial data is becoming increasingly important in solving real-world problem
 ### **Tutorials and Articles**
 - **GeoPandas Documentation**: [geopandas.org](https://geopandas.org/)  
 - **Satellite Image Analysis with Python**: [Planet Univesity](https://university.planet.com/getting-started-with-analyzing-satellite-imagery-with-python/1788192/scorm/37f7ncy9a67o9)
+- **Intro to Google Earth Engine Python API**: [Community Tutorial](https://developers.google.com/earth-engine/tutorials/community/intro-to-python-api) — step-by-step guide to authenticating, loading imagery, and running analyses with the Earth Engine Python client.
+
+```python
+import ee
+
+def initialize_ee():
+    """Authenticate (if needed) and initialize the Earth Engine Python API."""
+    try:
+        ee.Initialize()
+    except Exception:
+        ee.Authenticate()
+        ee.Initialize()
+
+
+initialize_ee()
+
+# Build a cloud-filtered Sentinel-2 collection over San Francisco for June 2023.
+collection = (
+    ee.ImageCollection("COPERNICUS/S2_SR")
+    .filterDate("2023-06-01", "2023-06-30")
+    .filterBounds(ee.Geometry.Point(-122.4194, 37.7749))
+    .filter(ee.Filter.lt("CLOUDY_PIXEL_PERCENTAGE", 10))
+)
+
+# Reduce to a representative median image and compute NDVI.
+image = collection.median()
+ndvi = image.normalizedDifference(["B8", "B4"]).rename("NDVI")
+
+# Define an export footprint (a simple rectangle around San Francisco).
+region = ee.Geometry.Rectangle([-123, 37, -122, 38])
+
+# Kick off a Drive export; monitor progress in the Earth Engine Code Editor.
+export_task = ee.batch.Export.image.toDrive(
+    image=ndvi,
+    description="sf_ndvi_june2023",
+    folder="earth-engine",
+    fileNamePrefix="sf_ndvi_june2023",
+    region=region.getInfo()["coordinates"],
+    scale=10,
+    maxPixels=1e10,
+)
+export_task.start()
+print("Export started. Check the Earth Engine Tasks tab.")
+```
 
 ---
 
