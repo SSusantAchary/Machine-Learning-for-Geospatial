@@ -38,7 +38,6 @@ Curated entry points for open geospatial datasets you can plug into machine lear
 </table>
 
 ## India Geospatial AI Scenario Catalog
-
 <table>
   <tr>
     <td width="33%" valign="top">
@@ -117,8 +116,49 @@ Curated entry points for open geospatial datasets you can plug into machine lear
       <img src="https://commons.wikimedia.org/wiki/Special:FilePath/mosdac_logo.jpg" width="240" height="160"><br/>
       <b>MOSDAC (ISRO)</b><br/>
       Meteorology & oceanography satellite data.<br/>
-      <a hr
+      <a href="https://mosdac.gov.in/">Portal</a><br/>
+      <img src="https://img.shields.io/badge/tags-weather%20%7C%20ocean%20%7C%20imagery-informational"/>
+    </td>
+    <td valign="top">
+      <img src="https://commons.wikimedia.org/wiki/Special:FilePath/A_land_cover_map_of_the_HKH_region_was_developed_using_Landsat_30-meter_data..png" width="240" height="160"><br/>
+      <b>NRSC — LULC (Bhuvan)</b><br/>
+      India land-use/land-cover products (1:50k & updates).<br/>
+      <a href="https://bhuvan.nrsc.gov.in/">Portal</a><br/>
+      <img src="https://img.shields.io/badge/tags-LULC%20%7C%20raster%20%7C%20vector-informational"/>
+    </td>
+    <td valign="top">
+      <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Copernicus_Logo_240.png" width="240" height="160"><br/>
+      <b>Copernicus (Sentinel)</b><br/>
+      Sentinel-1/2/3 imagery via Data Space.<br/>
+      <a href="https://dataspace.copernicus.eu/">Portal</a><br/>
+      <img src="https://img.shields.io/badge/tags-satellite%20%7C%20Sentinel%20%7C%20imagery-informational"/>
+    </td>
+  </tr>
 
+  <tr>
+    <td valign="top">
+      <img src="https://commons.wikimedia.org/wiki/Special:FilePath/USGS_logo.svg" width="240" height="160"><br/>
+      <b>USGS — EarthExplorer</b><br/>
+      Landsat, SRTM, ASTER, more (India covered).<br/>
+      <a href="https://earthexplorer.usgs.gov/">Portal</a><br/>
+      <img src="https://img.shields.io/badge/tags-Landsat%20%7C%20DEM%20%7C%20imagery-informational"/>
+    </td>
+    <td valign="top">
+      <img src="https://commons.wikimedia.org/wiki/Special:FilePath/World_Topography.jpg" width="240" height="160"><br/>
+      <b>OpenTopography</b><br/>
+      Global/topical DEMs; LiDAR where available.<br/>
+      <a href="https://opentopography.org/">Portal</a><br/>
+      <img src="https://img.shields.io/badge/tags-DEM%20%7C%20SRTM%20%7C%20ALOS-informational"/>
+    </td>
+    <td valign="top">
+      <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Mystus_gulio.jpg" width="240" height="160"><br/>
+      <b>India Biodiversity Portal</b><br/>
+      Species occurrences & ecosystem layers.<br/>
+      <a href="https://indiabiodiversity.org/">Portal</a><br/>
+      <img src="https://img.shields.io/badge/tags-biodiversity%20%7C%20occurrence%20%7C%20points-informational"/>
+    </td>
+  </tr>
+</table>
 
 
 ## Sample downloader
