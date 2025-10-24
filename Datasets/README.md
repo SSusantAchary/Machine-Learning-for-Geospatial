@@ -37,7 +37,7 @@ Curated entry points for open geospatial datasets you can plug into machine lear
   </tr>
 </table>
 
-## India Geospatial AI Scenario Catalog
+## Indian Dataset for Geospatial Application
 <table>
   <tr>
     <td width="33%" valign="top">
@@ -48,7 +48,7 @@ Curated entry points for open geospatial datasets you can plug into machine lear
       <img src="https://img.shields.io/badge/tags-toposheets%20%7C%20vector%20%7C%20India-informational"/>
     </td>
     <td width="33%" valign="top">
-      <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Bhuvanlogo.jpg" width="240" height="160"><br/>
+      <img src="https://bhuvan.nrsc.gov.in/home/images/bhuvan-logo.png" width="240" height="160"><br/>
       <b>ISRO/NRSC — Bhuvan</b><br/>
       National geoportal: imagery & thematic layers.<br/>
       <a href="https://bhuvan.nrsc.gov.in/">Portal</a><br/>
@@ -144,11 +144,11 @@ Curated entry points for open geospatial datasets you can plug into machine lear
       <img src="https://img.shields.io/badge/tags-Landsat%20%7C%20DEM%20%7C%20imagery-informational"/>
     </td>
     <td valign="top">
-      <img src="https://commons.wikimedia.org/wiki/Special:FilePath/World_Topography.jpg" width="240" height="160"><br/>
-      <b>OpenTopography</b><br/>
-      Global/topical DEMs; LiDAR where available.<br/>
-      <a href="https://opentopography.org/">Portal</a><br/>
-      <img src="https://img.shields.io/badge/tags-DEM%20%7C%20SRTM%20%7C%20ALOS-informational"/>
+      <img src="https://upload.wikimedia.org/wikipedia/en/9/93/Cartosat1Assembly.jpg" width="240" height="160"><br/>
+      <b>NRSC — CartoDEM (India)</b><br/>
+      30 m/10 m India DEM from IRS stereo; hillshade & contours via Bhuvan.<br/>
+      <a href="https://bhuvan.nrsc.gov.in/">Portal</a><br/>
+      <img src="https://img.shields.io/badge/tags-DEM%20%7C%20elevation%20%7C%20India-informational"/>
     </td>
     <td valign="top">
       <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Mystus_gulio.jpg" width="240" height="160"><br/>
@@ -158,6 +158,54 @@ Curated entry points for open geospatial datasets you can plug into machine lear
       <img src="https://img.shields.io/badge/tags-biodiversity%20%7C%20occurrence%20%7C%20points-informational"/>
     </td>
   </tr>
+<tr>
+  <td valign="top">
+    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Indian_digital_logo.jpg" width="240" height="160"><br/>
+    <b>Bhu-Naksha (NIC)</b><br/>
+    Cadastral parcels & land records (state-wise) with attribution.<br/>
+    <a href="https://bhunaksha.gov.in/">Portal</a><br/>
+    <img src="https://img.shields.io/badge/tags-cadastral%20%7C%20parcels%20%7C%20vector-informational"/>
+  </td>
+  <td valign="top">
+    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/IMD_logo.jpg" width="240" height="160"><br/>
+    <b>IMD — Mausam</b><br/>
+    Weather radar/satellite, rainfall, warnings & city forecasts.<br/>
+    <a href="https://mausam.imd.gov.in/">Portal</a><br/>
+    <img src="https://img.shields.io/badge/tags-weather%20%7C%20radar%20%7C%20satellite-informational"/>
+  </td>
+  <td valign="top">
+    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Ramsar_logo.svg" width="240" height="160"><br/>
+    <b>National Wetland Atlas (NWIA)</b><br/>
+    Wetlands inventory/atlas layers for India (Bhuvan).<br/>
+    <a href="https://bhuvan.nrsc.gov.in/">Portal</a><br/>
+    <img src="https://img.shields.io/badge/tags-wetlands%20%7C%20LULC%20%7C%20raster-informational"/>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Worldpop.svg" width="240" height="160"><br/>
+    <b>WorldPop — India</b><br/>
+    100 m gridded population, demographics & mobility layers.<br/>
+    <a href="https://www.worldpop.org/">Portal</a><br/>
+    <img src="https://img.shields.io/badge/tags-population%20%7C%20rasters%20%7C%20grids-informational"/>
+  </td>
+  <td valign="top">
+    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/ArcGIS_globe.png" width="240" height="160"><br/>
+    <b>Esri Living Atlas (India layers)</b><br/>
+    Ready-to-use base maps & thematic layers with India coverage.<br/>
+    <a href="https://livingatlas.arcgis.com/">Portal</a><br/>
+    <img src="https://img.shields.io/badge/tags-basemaps%20%7C%20thematic%20%7C%20services-informational"/>
+  </td>
+  <td valign="top">
+    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/NIC_logo.svg" width="240" height="160"><br/>
+    <b>NIC Map Services</b><br/>
+    National GIS services for ministries/states; key admin layers.<br/>
+    <a href="https://gis.nic.in/">Portal</a><br/>
+    <img src="https://img.shields.io/badge/tags-services%20%7C%20WMS/WFS%20%7C%20admin-informational"/>
+  </td>
+</tr>
+
+
 </table>
 
 
