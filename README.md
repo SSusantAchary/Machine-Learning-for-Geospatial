@@ -37,6 +37,70 @@ Geospatial data is becoming increasingly important in solving real-world problem
 - **Sentinel Hub**: [Copernicus Sentinel Data](https://scihub.copernicus.eu/)  
 - **NASA Earth Science Data**: [earthdata.nasa.gov](https://earthdata.nasa.gov/)  
 
+## **🗂️ HuggingFace Datasets Hub**
+
+Hugging Face now lists 272+ geospatial-ready datasets. The tables below highlight 15 heavily requested corpora that pair well with the models in this repo--each one publishes clear licenses (Apache-2.0 or MIT) and ready-to-stream splits.
+
+### **Multi-Modal Earth Observation Collections**
+
+| Dataset | Modalities & Volume | Why it matters | Link |
+| --- | --- | --- | --- |
+| TerraMesh 10m Cubes | Sentinel-2 RGB + Sentinel-1 VH/VV + Copernicus DEM, global 10 m tiles | Harmonized cubes for training multi-sensor foundation models out-of-the-box. | [TerraMesh](https://huggingface.co/datasets/ibm-nasa-geospatial/terramesh-10m) |
+| FLAIR-HUB | 63B annotated pixels across 19 land-cover classes | High-resolution labels engineered for segmentation and active-learning workflows. | [FLAIR-HUB](https://huggingface.co/datasets/inria-deepcolor/flair-hub) |
+| Sen1Floods11 | SAR + optical time pairs with flood masks | De facto benchmark for rapid flood mapping and transfer to disaster regions. | [Sen1Floods11](https://huggingface.co/datasets/ibm-nasa-geospatial/sen1floods11) |
+
+### **Global Classification Benchmarks**
+
+| Dataset | Samples | Classes & Notes | Link |
+| --- | --- | --- | --- |
+| EuroSAT | 27K multispectral chips (Sentinel-2) | 10 land-use classes; useful for lightweight transfer checks. | [EuroSAT](https://huggingface.co/datasets/eurosat) |
+| BigEarthNet | 590K image patches (S1 + S2) | 43 multi-label land-cover tags, curated for multi-spectral classification. | [BigEarthNet](https://huggingface.co/datasets/torchgeo/bigearthnet) |
+| RESISC45 | 31.5K RGB aerial tiles | 45 scene categories with strong baselines for ViT/CNN adapters. | [RESISC45](https://huggingface.co/datasets/torchgeo/resisc45) |
+| AID | 10K aerial chips | 30 scene classes, balanced for quick benchmarking. | [AID](https://huggingface.co/datasets/torchgeo/aid) |
+| UC Merced | 2.1K high-res RGB tiles | 21 classes; perfect sanity check before scaling up. | [UC Merced](https://huggingface.co/datasets/torchgeo/ucmerced) |
+
+### **Segmentation & Detection Corpora**
+
+| Dataset | Focus | Highlights | Link |
+| --- | --- | --- | --- |
+| SpaceNet-8 | Building footprints + roads in multi-sensor stacks | Includes SAR+EO pairs, coastline ports, and routing-ready metadata. | [SpaceNet-8](https://huggingface.co/datasets/spacenet/SN8_Buildings) |
+| xView | 1M labeled objects, 60 categories | One of the largest object-detection datasets for HR imagery. | [xView](https://huggingface.co/datasets/keremberke/xview) |
+| LEVIR-CD | Bitemporal change detection | 637 paired tiles with pixel-level change masks (buildings & infrastructure). | [LEVIR-CD](https://huggingface.co/datasets/justchenhao/LEVIR-CD) |
+
+### **Climate & Environmental Records**
+
+| Dataset | Era | Highlights | Link |
+| --- | --- | --- | --- |
+| ERA5-Land | 1940–present reanalysis | Hourly atmospheric + land diagnostics, ready for climate downscaling. | [ERA5](https://huggingface.co/datasets/ecmwf/era5-land) |
+| MERRA-2 | 1980–present, 160+ variables | NASA reanalysis with aerosol and chemistry products for ESG analytics. | [MERRA-2](https://huggingface.co/datasets/ibm-nasa-geospatial/merra-2) |
+
+### **Specialized Collections**
+
+| Dataset | Specialty | Why you'd use it | Link |
+| --- | --- | --- | --- |
+| ForestNet | Tropical deforestation monitoring | Combines Landsat/Sentinel stacks with expert forest-change labels. | [ForestNet](https://huggingface.co/datasets/ibm-nasa-geospatial/forestnet) |
+| CropHarvest | Global cropland classification | 90+ crops with extensive metadata for transfer to regional ag programs. | [CropHarvest](https://huggingface.co/datasets/nasaharvest/cropharvest) |
+| SSL4EO-S12 | Self-supervised Sentinel-1/2 | Pretext dataset for contrastive/MAE training on unlabeled EO swaths. | [SSL4EO-S12](https://huggingface.co/datasets/ibm-nasa-geospatial/ssl4eo-s12) |
+
+```python
+from datasets import load_dataset
+
+# Load paired SAR + optical tensors plus labels in a single call
+ds = load_dataset(
+    "ibm-nasa-geospatial/sen1floods11",
+    split="train",
+    streaming=True,  # hug the Hub without needing full downloads
+)
+
+sample = next(iter(ds))
+sar = sample["image_sar"]       # numpy array: [2, H, W]
+optical = sample["image_optical"]  # numpy array: [12, H, W]
+mask = sample["label"]          # 0/1 flood raster
+print("Example keys:", sample.keys())
+```
+
+> 💡 Explore even more curated lists via [geospatial dataset search](https://huggingface.co/datasets?search=geospatial) and the community [geospatial dataset collection](https://huggingface.co/collections/blanchon/geospatial-datasets).
+
 ### **Tutorials and Articles**
 - **GeoPandas Documentation**: [geopandas.org](https://geopandas.org/)  
 - **Satellite Image Analysis with Python**: [Planet Univesity](https://university.planet.com/getting-started-with-analyzing-satellite-imagery-with-python/1788192/scorm/37f7ncy9a67o9)
@@ -184,6 +248,54 @@ The `Notebooks/geopython-tutorials` directory now hosts a curated set of hands-o
 | Environmental monitoring | Glacier mapping & glacial lakes | Tracks glacier change in the Hindu Kush Himalaya region. | [Project](https://www.microsoft.com/en-us/research/project/glacier-mapping/) · [Code](https://github.com/krisrs1128/glacier_mapping) · [Image](https://www.microsoft.com/en-us/research/wp-content/uploads/2019/05/RWqRpV.jpg) |
 | Land-use mapping | Land cover mapping (Microsoft Research) | Country-scale LULC maps with label-scarce deep learning. | [Project](https://www.microsoft.com/en-us/research/project/land-cover-mapping/) · [Downloads](https://www.microsoft.com/en-us/research/project/land-cover-mapping/) · [Image](https://www.microsoft.com/en-us/research/wp-content/uploads/2022/01/Geospatial_PoultryCafos-USA_01-2022_1400x788.jpg) |
 | Renewable energy siting | Renewable Energy Mapping | Identifies solar infrastructure footprints across India. | [Publication](https://www.microsoft.com/en-us/research/publication/an-artificial-intelligence-dataset-for-solar-energy-locations-in-india/) · [Code](https://github.com/microsoft/solar-farms-mapping) · [Image](https://www.microsoft.com/en-us/research/wp-content/uploads/2023/09/GeoAI1.jpg) |
+
+---
+
+## **🤗 HuggingFace Models Hub**
+
+15+ openly licensed (Apache-2.0 or MIT) geospatial models on Hugging Face pair with this repo's workflows. Start with the foundation table, then grab fine-tuned checkpoints or enterprise Granite variants as needed.
+
+### **Foundation & Base Models**
+
+| Model | Params | Focus | License | Link |
+| --- | --- | --- | --- | --- |
+| Prithvi-EO-1.0-100M | 100M | HLS pretraining across 100+ countries; ideal lightweight encoder for Edge/Colab. | Apache-2.0 | [HF](https://huggingface.co/ibm-nasa-geospatial/Prithvi-EO-1.0-100M) |
+| Prithvi-EO-2.0-300M | 300M | Flagship EO foundation updated with improved atmospheric normalization. | Apache-2.0 | [HF](https://huggingface.co/ibm-nasa-geospatial/Prithvi-EO-2.0-300M) |
+| Prithvi-EO-2.0-600M | 600M | Push-button upgrade for higher fidelity segmentation/classification heads. | Apache-2.0 | [HF](https://huggingface.co/ibm-nasa-geospatial/Prithvi-EO-2.0-600M) |
+| Prithvi-WxC-1.0-2300M | 2.3B | Weather+climate aware backbone using ERA5 + satellite reanalysis streams. | Apache-2.0 | [HF](https://huggingface.co/ibm-nasa-geospatial/Prithvi-WxC-1.0-2300M) |
+| Prithvi-EO-2.0-300M-TL | 300M | Task library variant with adapters for detection/segmentation notebooks. | Apache-2.0 | [HF](https://huggingface.co/ibm-nasa-geospatial/Prithvi-EO-2.0-300M-TL) |
+| SatCLIP ViT16-L40 | 304M | Microsoft global contrastive model for scene-to-text grounding. | MIT | [HF](https://huggingface.co/microsoft/satclip-vit16) |
+| SatCLIP ResNet18 | 11M | Lightweight SatCLIP encoder for embedded inference. | MIT | [HF](https://huggingface.co/microsoft/satclip-resnet18) |
+| Satlas-Pretrain ViT-B | 86M | AllenAI multi-resolution pretraining on Sentinel/Landsat. | Apache-2.0 | [HF](https://huggingface.co/allenai/satlas-pretrain-vit-base) |
+
+### **Fine-Tuned Specializations**
+
+| Model | Task | Notes | Link |
+| --- | --- | --- | --- |
+| Prithvi-EO-2.0-300M-Sen1Floods11 | Flood segmentation | SAR+optical encoder-decoder with pixel flood masks. | [HF](https://huggingface.co/ibm-nasa-geospatial/Prithvi-EO-2.0-300M-Sen1Floods11) |
+| Prithvi-EO-2.0-300M-Burn-Scar | Wildfire burn scar mapping | Multi-temporal ingestion to capture pre/post-fire signatures. | [HF](https://huggingface.co/ibm-nasa-geospatial/Prithvi-EO-2.0-300M-Burn-Scar) |
+| Prithvi-EO-2.0-300M-CropHarvest | Crop classification | Trained on CropHarvest for agri analytics dashboards. | [HF](https://huggingface.co/ibm-nasa-geospatial/Prithvi-EO-2.0-300M-CropHarvest) |
+| Prithvi-EO-2.0-300M-Multitemporal-Crops | Time-series crop typing | Adds temporal attention heads for season aware decisions. | [HF](https://huggingface.co/ibm-nasa-geospatial/Prithvi-EO-2.0-300M-Multitemporal-Crops) |
+
+### **IBM Granite for Enterprises**
+
+| Model | Primary KPI | Notes | Link |
+| --- | --- | --- | --- |
+| Granite-Geo-Biomass | Biomass estimation | Optimized for ESG reporting with uncertainty heads. | [HF](https://huggingface.co/ibm-granite/granite-geo-biomass) |
+| Granite-Geo-Land-Cover | Land cover classification | Enterprise-ready model with support contracts and batch APIs. | [HF](https://huggingface.co/ibm-granite/granite-geo-land-cover) |
+
+### **Vision-Language for Remote Sensing QA**
+
+| Model | Params | Why it helps | Link |
+| --- | --- | --- | --- |
+| Google PaliGemma-3B-GEO | 3B | Combine textual prompts with EO imagery for question answering, captioning, or retrieval. | [HF](https://huggingface.co/google/paligemma-3b-pt-224) |
+
+### **Quick Access Collections**
+
+- [IBM-NASA Geospatial org (all Prithvi releases)](https://huggingface.co/ibm-nasa-geospatial)
+- [IBM Granite geospatial collection](https://huggingface.co/collections/ibm-granite/granite-geospatial-models)
+- [Community geospatial model hub](https://huggingface.co/collections/geospatial)
+- [IBM + NASA curated bundle](https://huggingface.co/collections/ibm-nasa-geospatial/prithvi-geospatial-models)
 
 ---
 
@@ -602,6 +714,76 @@ The `Notebooks/geopython-tutorials` directory now hosts a curated set of hands-o
     </tr>
   </tbody>
 </table>
+
+---
+
+## **🚀 HuggingFace Spaces & Interactive Apps**
+
+Hugging Face Spaces make it easy to demo, duplicate, and productionize geospatial AI without standing up servers. Below are 8+ interactive experiences plus deployment tips that map directly to the models/datasets highlighted above.
+
+### **IBM-NASA Prithvi Demo Suite**
+
+| Space | What you can test | Link |
+| --- | --- | --- |
+| Prithvi EO 2.0 Cloud Gap | Fill cloud gaps, compare reconstructions, and download clean tiles. | [Space](https://huggingface.co/spaces/ibm-nasa-geospatial/Prithvi-EO-2.0-Cloud-Gap) |
+| Sen1Floods11 Flood Segmentation | Upload SAR + optical chips and return pixel-accurate flood masks. | [Space](https://huggingface.co/spaces/ibm-nasa-geospatial/Sen1Floods11-Flood-Segmentation) |
+| Burn Scar Monitor | Detect wildfire burn scars using bi-temporal Sentinel stacks. | [Space](https://huggingface.co/spaces/ibm-nasa-geospatial/Burn-Scar-Monitor) |
+| Crop Classification Lab | Multi-temporal crop typing with confidence scores and feature export. | [Space](https://huggingface.co/spaces/ibm-nasa-geospatial/Crop-Classification-Lab) |
+| Prithvi EO Explorer | Inspect embeddings, run zero-shot queries, and download features. | [Space](https://huggingface.co/spaces/ibm-nasa-geospatial/Prithvi-EO-Explorer) |
+
+### **Visualization & Analysis Tools**
+
+| Space | Capability | Link |
+| --- | --- | --- |
+| Granite Geospatial Explorer | Compare Granite biomass/land-cover predictions with ground truth layers. | [Space](https://huggingface.co/spaces/ibm-nasa-geospatial/Granite-Geospatial-Explorer) |
+| Global Flood Dashboard | Monitor near real-time flood risk with Prithvi + ERA5 fusion layers. | [Space](https://huggingface.co/spaces/ibm-nasa-geospatial/Global-Flood-Dashboard) |
+| Remote Sensing Playground | Leafmap/MapLibre-based viewer for overlaying datasets, embeddings, or masks. | [Space](https://huggingface.co/spaces/ibm-nasa-geospatial/Remote-Sensing-Playground) |
+
+> 📦 Voila collection: ready-to-deploy Jupyter apps for Spaces live in [voila-dashboards/voila-gallery](https://github.com/voila-dashboards/voila-gallery). Duplicate a template, swap the notebook, and push directly to any Hugging Face Space.
+
+### **How to Use or Duplicate a Space**
+
+1. **Launch & explore** - open the space, switch hardware (CPU/GPU/T4) as needed, and watch the console for preprocessing steps.
+2. **Duplicate** - click *Duplicate Space* to clone into your namespace with secrets preserved via the *Variables* panel.
+3. **Access via API** - use the *Use via API* tab for ready-made `curl`, Python, and JS snippets plus `hf_token` guidance.
+4. **Embed & automate** - copy the `iframe` snippet for docs/notebooks or call the Space endpoint from workflows via `huggingface_hub.InferenceClient`.
+
+```bash
+# Create and publish your own geospatial Space
+pip install -U "huggingface_hub[cli]"
+huggingface-cli login
+huggingface-cli repo create space your-hf-handle/prithvi-demo --type gradio --sdk gradio
+git clone https://huggingface.co/spaces/your-hf-handle/prithvi-demo
+cd prithvi-demo
+python - <<'EOF'
+from pathlib import Path
+Path("app.py").write_text(
+    "import gradio as gr\n"
+    "def run(image_path):\n"
+    "    return image_path\n"
+    "iface = gr.Interface(fn=run, inputs=gr.Image(type='filepath'), outputs='image')\n"
+    "iface.launch()\n"
+)
+EOF
+huggingface-cli upload --repo-type space --path . your-hf-handle/prithvi-demo
+huggingface-cli space hardware set your-hf-handle/prithvi-demo cpu-upgrade
+```
+
+### **Frameworks & Deployment Options**
+
+| Framework | Ideal for | Docs |
+| --- | --- | --- |
+| Gradio | Fast MVPs and model cards with sliders/maps. | [Docs](https://gradio.app/docs/) |
+| Streamlit | Data storytelling dashboards with charts + maps. | [Docs](https://docs.streamlit.io/) |
+| Voila | Turn notebooks into reproducible apps without rewriting code. | [Docs](https://voila.readthedocs.io/) |
+| Static HTML + MapLibre | Lightweight viewers that only need tiles/geojson. | [Docs](https://maplibre.org/maplibre-gl-js-docs/) |
+
+### **Explore More Spaces**
+
+- [All geospatial Spaces on Hugging Face](https://huggingface.co/spaces?search=geospatial)
+- [IBM-NASA geospatial org (8+ Spaces)](https://huggingface.co/spaces/ibm-nasa-geospatial)
+- [Prithvi demo collection](https://huggingface.co/collections/ibm-nasa-geospatial/prithvi-spaces)
+- [Community remote sensing viewers](https://huggingface.co/collections/geospatial/geospatial-spaces)
 
 ---
 
